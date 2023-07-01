@@ -9,9 +9,10 @@ parser = argparse.ArgumentParser(
 parser.add_argument("filename")
 parser.add_argument("-c", "--count", default=3, required=True, help="count of bytes to corrupt (default: 3)", dest='count')
 parser.add_argument("-v", "--verbose", help="be verbose", action="store_true")
-args = parser.parse_args()
 
+args = parser.parse_args()
 verbose = args.verbose
+
 
 def corrupt_file(file_path):
     with open(file_path, "r+b") as file:
@@ -48,6 +49,5 @@ def corrupt_file(file_path):
 
     print("\nFile corrupted successfully.")
 
-
-corrupt_file(args.filename)
-
+if __name__ == "__main__":
+  corrupt_file(args.filename)
