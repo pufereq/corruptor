@@ -6,7 +6,7 @@
 
 I wanted to break some Linux VMs by corrupting some files randomly. First I tried `shred` from GNU coreutils but it corrupts bytes from the beginning and not in random order. So I went ahead and coded this.
 
-## Usage Cases
+## Use Cases
 
 - Testing and Debugging: Simulate file corruption scenarios to test applications, data recovery mechanisms, and error handling procedures.
 - Data Security: Assess the effectiveness of backup systems, data integrity checks, and security measures against data corruption attacks.
@@ -14,6 +14,10 @@ I wanted to break some Linux VMs by corrupting some files randomly. First I trie
 - Data Recovery: Use controlled corruption to recover inaccessible portions of files.
 - Education and Training: Demonstrate file system concepts, error handling, and data recovery techniques in educational settings.
 - Fun: Use corruption to break stuff for fun
+
+## Prerequisites
+
+- Python 3.9 or above
 
 ## Usage
 
