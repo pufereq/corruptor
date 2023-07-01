@@ -1,15 +1,23 @@
 # corruptor
+
 `corruptor` is a Python script that allows you to easily corrupt files by randomly overwriting bytes within them.
 
 ## Why?
+
 I wanted to break some Linux VMs by corrupting some files randomly. First I tried `shred` from GNU coreutils but it corrupts bytes from the beginning and not in random order. So I went ahead and coded this.
 
+## Usage Cases
+
+- Testing and Debugging: Simulate file corruption scenarios to test applications, data recovery mechanisms, and error handling procedures.
+- Data Security: Assess the effectiveness of backup systems, data integrity checks, and security measures against data corruption attacks.
+- Research and Analysis: Investigate the impact of data corruption on file formats and analyze software behavior when encountering corrupted files.
+- Data Recovery: Use controlled corruption to recover inaccessible portions of files.
+- Education and Training: Demonstrate file system concepts, error handling, and data recovery techniques in educational settings.
+- Fun: Use corruption to break stuff for fun
+
 ## Usage
-# Corrupt
 
-
-## Usage
-
+```
 usage: corruptor [-h] [-c COUNT] [-v] filename
 
 Corrupt files easily!
@@ -22,7 +30,7 @@ optional arguments:
 -c COUNT, --count COUNT
 count of bytes to corrupt (default: 3)
 -v, --verbose be verbose
-
+```
 
 ## Examples
 
@@ -81,4 +89,4 @@ File corrupted successfully.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0. For more details, see the LICENSE file.
+This project is licensed under the GNU General Public License v3.0. For more details, see the [LICENSE](LICENSE) file.
